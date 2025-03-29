@@ -1,6 +1,10 @@
 {
     "java.configuration.updateBuildConfiguration": "interactive",
     "cSpell.words": [
-        "gradlew"
+        "Bukkit",
+        "chibi",
+        "gradlew",
+        "hasura",
+        "timestamptz"
     ]
 }
