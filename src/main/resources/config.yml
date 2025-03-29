@@ -1,3 +1,3 @@
-hasura-endpoint: "https://graphql.chibi.art"
-hasura-admin-secret: "YOUR_HASURA_ADMIN_SECRET_HERE"
-telemetry-interval: 200   # Interval in ticks (20 ticks = 1 second)
+hasura-endpoint: ${CFG_HASURA_ENDPOINT}
+hasura-admin-secret: ${CFG_HASURA_ADMIN_SECRET}
+telemetry-interval: ${CFG_TELEMETRY_INTERVAL}
