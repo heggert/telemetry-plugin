@@ -1,3 +1,5 @@
 hasura-endpoint: ${CFG_HASURA_ENDPOINT}
 hasura-admin-secret: ${CFG_HASURA_ADMIN_SECRET}
 telemetry-interval: ${CFG_TELEMETRY_INTERVAL}
+exception-log-table: ${CFG_EXCEPTION_LOG_TABLE}
+metrics-table: ${CFG_METRICS_TABLE}

@@ -2,11 +2,25 @@ services:
   mc-test:
     image: itzg/minecraft-server
     environment:
-      EULA: "true"
-      TYPE: "PAPER"
+      EULA: true
+      TYPE: PAPER
+      TZ: Europe/Berlin
+      REPLACE_ENV_IN_PLACE: true
+      REPLACE_ENV_DURING_SYNC: true
+      CFG_HASURA_ENDPOINT: https://graphql.chibi.art/v1/graphql
+      CFG_TELEMETRY_INTERVAL: 200
+      CFG_HASURA_ADMIN_SECRET_FILE: /run/secrets/hasura_admin_secret
+      CFG_EXCEPTION_LOG_TABLE: exception_logs_dev
+      CFG_METRICS_TABLE: minecraft_metrics_dev
     ports:
       - "25565:25565"
       - "19132:19132/udp"
     volumes:
       - ./server:/data
-      - ./build/libs/TelemetryPlugin-dev.jar:/data/plugins/TelemetryPlugin-dev.jar
+      - ./build/libs/telemetry-plugin-dev-all.jar:/data/plugins/telemetry-plugin-dev.jar
+    secrets:
+      - hasura_admin_secret
+
+secrets:
+  hasura_admin_secret:
+    file: ./.hasura_admin_secret

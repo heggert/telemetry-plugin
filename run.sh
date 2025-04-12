@@ -1,5 +1,5 @@
 #!/bin/bash
 set -e
 
-bash gradlew build
+bash gradlew clean shadowJar
 docker compose up
