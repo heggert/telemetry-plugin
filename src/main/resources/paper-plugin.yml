@@ -1,8 +1,8 @@
-name: TelemetryPlugin
-version: 1.0.0
+name: Telemetry
+version: 1.1.0
 main: art.chibi.telemetry.TelemetryPlugin
-bootstrapper: art.chibi.telemetry.TelemetryBootstrap
-description: Sends telemetry data to for analysis.
+bootstrapper: art.chibi.telemetry.Bootstrap
+description: Sends telemetry data.
 author: dondelay
 website: https://chibi.art
 api-version: '1.21.4'

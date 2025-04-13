@@ -4,28 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30126d55-280c-430e-b23c-804703ab10e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/telemetry-plugin.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/telemetry-plugin.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/ErrorReporter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/ExceptionReporterAppender.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/ServerStatsTelemetry.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/TelemetryPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+    <list default="true" id="30126d55-280c-430e-b23c-804703ab10e4" name="Changes" comment="Switch to kotlin">
+      <change afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/TelemetryComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/TelemetryModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/TelemetryPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/reporter/ErrorReporterAppender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/TelemetryPlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/Command.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/control/CommandInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/ErrorReporter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/reporter/ErrorReporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/ExceptionReporterAppender.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/ServerStatsTelemetry.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/reporter/ServerStatsReporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/TelemetryBootstrap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/Bootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/TelemetryCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/control/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/TelemetryPlugin.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/config/TelemetryConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/di/TelemetryComponent.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/di/TelemetryModule.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/paper-plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/paper-plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,6 +102,19 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/reporter" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="art.chibi.telemetry.control" />
+      <recent name="art.chibi.telemetry.reporter" />
+      <recent name="art.chibi.telemetry" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="art.chibi.telemetry" />
+    </key>
+  </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
   </component>
@@ -125,12 +134,38 @@
       <workItem from="1744453737931" duration="2019000" />
       <workItem from="1744455763408" duration="1304000" />
       <workItem from="1744457559377" duration="11004000" />
-      <workItem from="1744474414932" duration="1054000" />
+      <workItem from="1744474414932" duration="5872000" />
+      <workItem from="1744529605729" duration="504000" />
+      <workItem from="1744530118892" duration="2244000" />
     </task>
+    <task id="LOCAL-00001" summary="Switch to kotlin">
+      <option name="closed" value="true" />
+      <created>1744498315642</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744498315642</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Switch to kotlin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Switch to kotlin" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

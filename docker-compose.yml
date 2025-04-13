@@ -17,7 +17,7 @@ services:
       - "19132:19132/udp"
     volumes:
       - ./server:/data
-      - ./build/libs/telemetry-plugin-dev-all.jar:/data/plugins/telemetry-plugin-dev.jar
+      - ./build/libs/Telemetry-dev.jar:/data/plugins/Telemetry-dev.jar
     secrets:
       - hasura_admin_secret
 
