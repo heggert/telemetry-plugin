@@ -5,6 +5,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Logger;
 
+@javax.inject.Singleton
 @dagger.Component(modules = TelemetryModule.class)
 public interface TelemetryComponent {
 

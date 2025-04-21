@@ -4,25 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30126d55-280c-430e-b23c-804703ab10e4" name="Changes" comment="Switch to kotlin">
-      <change afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/TelemetryComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/TelemetryModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/TelemetryPlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/reporter/ErrorReporterAppender.java" afterDir="false" />
+    <list default="true" id="30126d55-280c-430e-b23c-804703ab10e4" name="Changes" comment="Refactor code and switch back to java">
+      <change afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/client/GraphQLClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/Command.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/control/CommandInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/ErrorReporter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/reporter/ErrorReporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/ExceptionReporterAppender.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/ServerStatsTelemetry.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/reporter/ServerStatsReporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/TelemetryBootstrap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/Bootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/TelemetryCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/control/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/TelemetryPlugin.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/config/TelemetryConfig.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/di/TelemetryComponent.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/di/TelemetryModule.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/paper-plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/paper-plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/TelemetryComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/TelemetryComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/TelemetryModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/TelemetryModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/reporter/ErrorReporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/reporter/ErrorReporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/reporter/ServerStatsReporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/art/chibi/telemetry/reporter/ServerStatsReporter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -136,7 +125,9 @@
       <workItem from="1744457559377" duration="11004000" />
       <workItem from="1744474414932" duration="5872000" />
       <workItem from="1744529605729" duration="504000" />
-      <workItem from="1744530118892" duration="2244000" />
+      <workItem from="1744530118892" duration="6569000" />
+      <workItem from="1745241672876" duration="251000" />
+      <workItem from="1745241932380" duration="1257000" />
     </task>
     <task id="LOCAL-00001" summary="Switch to kotlin">
       <option name="closed" value="true" />
@@ -146,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744498315642</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactor code and switch back to java">
+      <option name="closed" value="true" />
+      <created>1744532833801</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744532833801</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +164,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Switch to kotlin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Switch to kotlin" />
+    <MESSAGE value="Refactor code and switch back to java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor code and switch back to java" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
